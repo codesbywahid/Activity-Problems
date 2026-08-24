@@ -1051,5 +1051,38 @@ print(data)
 
 print("File operation completed.")
 
+# Activity 98:
+print("Student Grade Calculator")
+print("------------------------")
+name = input("Enter student name: ")
+print("Enter marks for 5 subjects")
+math = float(input("Math: "))
+english = float(input("English: "))
+science = float(input("Science: "))
+computer = float(input("Computer: "))
+urdu = float(input("Urdu: "))
+total = math + english + science + computer + urdu
+average = total / 5
+print("\nStudent:", name)
+print("Total Marks:", total)
+print("Average:", average)
+if average >= 90:
+    grade = "A+"
+elif average >= 80:
+    grade = "A"
+elif average >= 70:
+    grade = "B"
+elif average >= 60:
+    grade = "C"
+elif average >= 50:
+    grade = "D"
+else:
+    grade = "F"
+print("Grade:", grade)
+if grade == "F":
+    print("Result: Fail")
+else:
+    print("Result: Pass")
+print("Thank you for using the program!")
 
 ```
