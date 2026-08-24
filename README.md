@@ -1025,4 +1025,31 @@ for num in numbers:
 
 print("The largest number is:", largest)
 
+# Activity 97:
+
+filename = "student.txt"
+
+name = input("Enter student name: ")
+age = input("Enter student age: ")
+course = input("Enter course: ")
+
+file = open(filename, "w")
+file.write("Student Information\n")
+file.write("Name: " + name + "\n")
+file.write("Age: " + age + "\n")
+file.write("Course: " + course + "\n")
+file.close()
+
+print("\nInformation saved successfully!")
+
+file = open(filename, "r")
+data = file.read()
+file.close()
+
+print("\nReading from file:")
+print(data)
+
+print("File operation completed.")
+
+
 ```
