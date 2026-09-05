@@ -1098,4 +1098,21 @@ m2 = Mobiles("Iphone","17 Pro Max")
 print(m2.name,m2.model)
 print(Mobiles.Shop_Name)
 
+# Activity 99 :
+class Student:
+    def __init__(self,name,marks1,marks2,marks3):
+        self.name=name
+        self.marks=[marks1,marks2,marks3]
+    def avg(self):
+        sum=0
+        for value in self.marks:
+            sum+=value
+        print("hi",self.name,"Your Average marks are :",sum/3)
+name=input("Enter Your Name : ")
+m1=int(input("Enter 1st subject marks :"))
+m2=int(input("Enter 2nd subject marks :"))
+m3=int(input("Enter 3rd subject marks :"))
+s1=Student(name,m1,m2,m3)
+s1.avg()
+
 ```
