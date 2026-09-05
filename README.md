@@ -1115,4 +1115,25 @@ m3=int(input("Enter 3rd subject marks :"))
 s1=Student(name,m1,m2,m3)
 s1.avg()
 
+# Activity 100 :
+class Account:
+    def __init__(self,balance,account_num):
+        self.balance=balance
+        self.account_num=account_num
+    def debit(self,amount):
+        self.balance-= amount
+        print("Rs",amount,"was debited")
+
+    def credit(self,amount):
+            self.balance+= amount
+            print("Rs",amount,"was credited")
+
+    def bal(self):
+         print("Your balance is :",self.balance)
+         return self.balance
+acc1=Account(5000,1)
+acc1.debit(2500)
+acc1.credit(500)
+acc1.bal()
+
 ```
