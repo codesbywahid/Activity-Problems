@@ -1085,4 +1085,17 @@ else:
     print("Result: Pass")
 print("Thank you for using the program!")
 
+# Activity 98: 
+class Mobiles:
+    Shop_Name="Old Mobiles Store"
+    def __init__(self,name,model):
+        self.name = name
+        self.model=model
+        print("Adding new mobile category")
+m1=Mobiles("Samsung","s24 Ultra")
+print(m1.name,m1.model)
+m2 = Mobiles("Iphone","17 Pro Max")
+print(m2.name,m2.model)
+print(Mobiles.Shop_Name)
+
 ```
